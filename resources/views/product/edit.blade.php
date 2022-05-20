@@ -1,6 +1,8 @@
 @extends('product.layout')
 
 @section('content')
+
+
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
@@ -10,6 +12,8 @@
             <a class="btn btn-success" href="{{ route('product.index') }}">Back</a>
         </div>
     </div>
+
+
     <form action="{{ URL('update/product/'.$product->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="row">

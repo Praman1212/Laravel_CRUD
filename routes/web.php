@@ -30,4 +30,6 @@ Route::get('delete/product/{id}',[ProductController::class,'Delete']);
 
 Route::post('update/product/{id}',[ProductController::class,'Update']);
 
+Route::get('show/product/{id}',[ProductController::class,'Show']);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
