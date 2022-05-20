@@ -30,14 +30,14 @@
             <td>{{ $pro->product_name }}</td>
             <td>{{ $pro->product_code }}</td>
             <td>{{ $pro->details }}</td>
-            <td>{{ $pro->logo }}</td>
+            <td></td>
             <td>
                 <a class="btn btn-info" href="">Show</a>
-                <a class="btn btn-info" href="">Edit</a>
-                <a class="btn btn-danger" href="">Delete</a>
+                <a class="btn btn-info" href="{{ URL::to('edit/product/'.$pro->id) }}">Edit</a>
+                <a class="btn btn-danger" href="{{ URL::to('delete/product/'.$pro->id) }}" onclick="return confirm('Are you sure ?')">Delete</a>
             </td>
             @endforeach
-        </tr>
+        </tr><br>
     </table>
 </div>
 

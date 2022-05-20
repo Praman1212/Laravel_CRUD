@@ -31,12 +31,12 @@
                     <textarea class="form-control" name="details" placeholder="Details"></textarea>
                 </div>
             </div>
-            <div class="col">
+            <!-- <div class="col">
                 <div class="form-group">
                     <strong>Product Image</strong>
                     <input type="file" name="logo">
                 </div>
-            </div>
+            </div> -->
             <div class="col">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>

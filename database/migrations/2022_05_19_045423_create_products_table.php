@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('product_name');
             $table->string('product_code');
             $table->string('details');
-            $table->string('logo');
+            // $table->string('logo');
             $table->timestamps();
         });
     }
